@@ -1,0 +1,425 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background: #FFF;
+}
+
+img {
+    max-width: 100%;
+}
+
+#contentor {
+    width: 100%;
+}
+
+/* Intro */
+
+
+#intro {
+    width: 100%;
+    height: 110vh;
+    background: url('../img/BACKGROUND.jpg') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#intro p {
+    color: white;
+}
+
+/*circulos*/
+
+#intro-circle {
+    position: absolute;
+    width: 100%;
+    height: 140vh;
+    background: url('../img/circle.png') no-repeat center bottom;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+    left: -5%;
+}
+
+#intro-circle2 {
+    position: absolute;
+    width: 115%;
+    height: 140vh;
+    background: url('../img/circle2.png') no-repeat center bottom;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+    top: -5%;
+}
+
+#intro-circle3 {
+    position: absolute;
+    width: 115%;
+    height: 110vh;
+    background: url('../img/circle3.png') no-repeat center bottom;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+    top: 20%;
+}
+
+#intro-circle4 {
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    background: url('../img/circle4.png') no-repeat center bottom;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+    top: 10%;
+    left: 10%;
+}
+
+/*títulos*/
+
+#title {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 32%;
+    line-height: 0%;
+    z-index: 3;
+}
+
+#intro-title {
+    margin: 0;
+    color: #FFF;
+    font-size: 4em;
+    display: none;
+}
+
+#intro-title2 {
+    color: #FFF;
+    font-size: 4em;
+    margin-top: 15%;
+    text-align: right;
+    display: none;
+}
+
+/*hero*/
+
+#hero-heart {
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    top: 64px;
+    left: 90px;
+    z-index: 1;
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+
+}
+
+#scroll {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding: 100px;
+    display: none;
+    animation: MoveUpDown 2s linear infinite;
+}
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+
+
+/* 5 LOVE LANGUAGES */
+
+#FIVELL {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-color: #FFB6C1;
+    overflow: hidden;
+    padding: 100px;
+}
+
+#header {
+    padding-top: 100px;
+}
+
+#header img {
+    position: absolute;
+    width: 30%;
+    left: 60%;
+    top: 40%;
+    overflow: hidden;
+    transition: transform .2s;
+}
+
+#header img:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+#header h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #FF3D7B;
+    letter-spacing: 0.10em;
+}
+
+#header p {
+    width: 50%;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/*button para o quiz*/
+
+.button {
+    background-color: #FF3D7B;
+    color: #FFF;
+    padding: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+/*QUIZ*/
+
+#quiz-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: #ffd1dc;
+}
+
+.quiz {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 100%;
+    overflow: hidden;
+    background-color: #ffd1dc;
+}
+
+.quizbox{
+    display: block;
+    padding-top: 100px;
+    padding-left: 310px;
+}
+
+.quizbox a {
+    padding: 1em;
+    cursor: pointer;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    background-color: #FF3D7B;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.quiz:first-child {
+    left: 0;
+}
+
+.quiz p {
+    width: 70%;
+    background-color: #FF3D7B;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.quiz h2{
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quiz h3 {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quiz h4 {
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+
+/*setas*/
+
+.setas{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding-left: 310px;
+    padding-bottom: 100px;
+}
+
+
+#back{
+    background-color: #FF3D7B;
+    color: #FFF;
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+
+#next{
+    background-color: #FF3D7B;
+    color: #FFF;
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+/*MENUS*/
+
+/*menu quiz*/
+#menu-quiz {
+    width: 100%;
+    text-align: center;
+}
+
+#menu-quiz a {
+    padding: 1em;
+    cursor: pointer;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    background-color: #FF3D7B;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+/*menu pagina*/
+
+.menu-ofc {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    text-align: center;
+    color: #FF3D7B;
+}
+
+.menu-ofc a {
+    display: inline-block;
+    padding: 1em;
+    cursor: pointer;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    background-color: #FF3D7B;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.menu-ofc a.active-menu {
+    color: #FF3D7B;
+    background-color: #FFF;
+}
+
+
+/*PÁGINAS*/
+
+#paginas {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.pagina {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background: url('../img/BACKGROUND2.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+
+.pagina:first-child {
+    display: block;
+}
+
+#title1 {
+    position: relative;
+    color: #FFF;
+    font-size: 64px;
+    margin: 0;
+    z-index: 2;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.text {
+    position: relative; 
+    text-align: center; 
+    margin:0;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.text p {
+    color: white;
+    font-size: 22px;
+    background-color: #FF3D7B;
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.img1 {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 10%;
+    z-index: 4;
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    overflow: hidden;
+}
+
+.img2 {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 65%;
+    z-index: 4;
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    overflow: hidden;
+}
